@@ -68,9 +68,9 @@ void MoveTo(int x,int y)
 
 void loop() {
   // put your main code here, to run repeatedly:
+  comdata.clear();
   while(Serial.available()>0)
   {
-    comdata.clear();
     comdata += char(Serial.read());
     delay(2);
   }
